@@ -55,8 +55,8 @@ namespace HelloWorld
                 string ans = Console.ReadLine();
                 double Preis = 0;
                 if(Double.TryParse(ans, out Preis)) {
-                    return Preis;
-                    break;
+                    if((Preis*100) % 10 == 0) return Preis;
+                    else Console.WriteLine("Falsche Eingabe");
                 }else
                 {
                     Console.WriteLine("Falsche Eingabe");
