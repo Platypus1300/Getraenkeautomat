@@ -68,7 +68,7 @@ namespace HelloWorld
 
         static void GebGeld(string name) {
 
-            Console.WriteLine(Guthaben);    
+            //Console.WriteLine(Guthaben);    
 
 
             int[] Einteilung = new int[5];
@@ -128,7 +128,7 @@ namespace HelloWorld
                     Console.WriteLine("Keine Münze");
                 }
 
-                Console.WriteLine(einzug);
+                //Console.WriteLine(einzug);
 
             }else{
                 Console.WriteLine("Keine Münze");
@@ -141,7 +141,7 @@ namespace HelloWorld
             if(eing.Length > 14) {
                 
                 string name = eing.Substring(15);
-                Console.WriteLine(name);
+                //Console.WriteLine(name);
 
                 int index = 21;
 
@@ -185,7 +185,7 @@ namespace HelloWorld
 
         static void buy(string eing) {
             string name = eing.Substring(4);
-            Console.WriteLine(name);
+            //Console.WriteLine(name);
 
             int index = 21;
 
@@ -219,14 +219,14 @@ namespace HelloWorld
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Namen[0]);
+            /*Console.WriteLine(Namen[0]);
             if(Namen[0] == null) Console.WriteLine("Ja");
-            else Console.WriteLine("Nein");
+            else Console.WriteLine("Nein");*/
 
             while(1 == 1) {
 
                 string eing = Console.ReadLine();
-                Console.WriteLine(Zuordnen(eing));
+                //Console.WriteLine(Zuordnen(eing));
                 int einordnung = Zuordnen(eing);
                 if(einordnung == 1) insertEuro(eing);
                 if(einordnung == 2) insertGetraenk(eing);
